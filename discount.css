@@ -1,0 +1,62 @@
+body
+{
+background-image: url("https://www.hameenlinna.fi/wp-content/uploads/2019/03/ilmakuva-verkatehdas-1920x768.jpg");
+background-size: cover;
+}
+
+h1
+{
+text-align: center;
+font-family: 'Times New Roman', Times, serif;
+margin-top: 30px;
+color: white;
+}
+
+h2
+{
+    
+    font-size: 25px;
+    margin-left: 30px;
+    margin-top: 60px;
+}
+
+
+.container
+{
+    max-width: 90%;
+    background-color: rgb(255, 251, 246);
+    text-align: left; 
+}
+
+.wrapper
+{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: (1fr, 2fr, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: fit-content;
+    max-width: 90%;
+    background-color: rgb(255, 251, 246);
+    text-align: left; 
+  
+}
+
+@media only screen and (width: 200px) {
+    body {
+      background-color: grey;
+      background-image: none;
+      
+    }
+    .container{
+        background-size: fit-content;
+
+    }
+    .wrapper{
+        background-size: fit-content;
+    }
+
+  }
+
+
+
+
