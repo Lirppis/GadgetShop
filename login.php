@@ -9,6 +9,9 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+
+<?php include('index.html') ?>
+
   <div class="header">
   	<h2>Login</h2>
   </div>
