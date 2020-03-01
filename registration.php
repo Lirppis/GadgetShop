@@ -1,4 +1,4 @@
- <?php include('server.php'); ?>
+<?php include('server.php'); ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -10,7 +10,7 @@
 <div class="header">
 <h2>Register</h2>
 </div>
-<form method="post" action="register.php" >
+<form method="post" action="registration.php" >
 
 <!-- Validation Error -->
 <?php include('errors.php'); ?>
@@ -30,7 +30,7 @@
 
 <div class="input-group">
 <label>Confirm Password</label>
-<input type="password" name="password_2">
+<input type="password" name="confirm_2">
 </div>
 
 <div class="input-group">
