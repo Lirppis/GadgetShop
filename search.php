@@ -1,3 +1,4 @@
+<?php include 'header.php'?>
 <?php include 'db.php'?>
 
 <?php
@@ -45,3 +46,4 @@
         echo "Minimum length is ".$min_length;
     }
 ?>
+<?php include 'header.php'?>
