@@ -10,7 +10,7 @@
 <div class="header">
 <h2>Register</h2>
 </div>
-<form method="post" action="registration.php" >
+<form method="post" action="register.php" >
 
 <!-- Validation Error -->
 <?php include('errors.php'); ?>
@@ -30,11 +30,11 @@
 
 <div class="input-group">
 <label>Confirm Password</label>
-<input type="password" name="confirm_2">
+<input type="password" name="password_2">
 </div>
 
 <div class="input-group">
-<button type="submit" name="register" class="btn">Register</button>
+<button type="submit" name="reg_user" class="btn">Register</button>
 </div>
 <p>
   		Already a member? <a href="login.php">Sign in</a>
