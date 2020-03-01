@@ -1,28 +1,55 @@
-<div class =" row footer">
-<div class ="col-md-9">
-&copy; <?php echo date ('Y'), "Student,Inc.All rights reserved";?>
-</div>
+<!-- Footer -->
+<footer class="page-footer font-small cyan darken-3">
 
+  <!-- Footer Elements -->
+  <div class="container">
 
-<div class="col-md-3">
-<ul class="dot icon">
+    <!-- Grid row-->
+    <div class="row">
 
-                            <li> <a class="footer-link facebook " href="https://www.facebook.com/"><img src="images/facebook.png" height="20" width="20" alt="facebook icon"></a>
-                            </li>
+      <!-- Grid column -->
+      <div class="col-md-12 py-5">
+        <div class="mb-5 flex-center">
 
-                          
-                            <li> <a class="footer-link instagram" href="https://www.instagram.com/"><img src="images/instagram.png" height="20" width="20" alt="instagram icon"></a>
-                            </li>
+          <!-- Facebook -->
+          <a class="fb-ic" href="https://www.facebook.com/">
+            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic">
+            <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+            <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic" href="https://www.instagram.com/" img src="images/instagram.png">
+            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Pinterest-->
+          <a class="pin-ic">
+            <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+          </a>
+        </div>
+      </div>
+      <!-- Grid column -->
 
-                            <li> <a class="footer-link gmail" href="mailto:neuvo.fms.fi@discount.com"><img src="images/email.png" height="20" width="20" alt="Email icon"></a>
-                            </li>
+    </div>
+    <!-- Grid row-->
 
+  </div>
+  <!-- Footer Elements -->
 
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/"> StudentInc.com</a>
+  </div>
+  <!-- Copyright -->
 
-                        </ul></div>
-</div> <!--Footer-->
-
-</div> <!--Container--> 
-</div> <!--header-->
-</body>
-</html>
+</footer>
+<!-- Footer -->
