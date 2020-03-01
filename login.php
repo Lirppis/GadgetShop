@@ -10,9 +10,10 @@
 </head>
 <body>
 
-
-
-  <div class="header">
+<div class="language" bg-dark>
+English  Finnish
+</div>
+<div class="header">
   	<h2>Login</h2>
   </div>
 	 
@@ -30,7 +31,7 @@
   		<button type="submit" class="btn" name="login_user">Login</button>
   	</div>
   	<p>
-  		Not yet a member? <a href="registration.php">Sign up</a>
+  		Not yet a member? <a href="register.php">Sign up</a>
   	</p>
   </form>
 </body>
