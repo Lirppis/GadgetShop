@@ -5,7 +5,8 @@
 
 
 <div class="col-md-3">
-<ul class="nav navbar-nav navbar-right icon">
+<ul class="dot icon">
+
                             <li> <a class="footer-link facebook " href="https://www.facebook.com/"><img src="images/facebook.png" height="20" width="20" alt="facebook icon"></a>
                             </li>
 

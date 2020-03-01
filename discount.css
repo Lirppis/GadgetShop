@@ -4,7 +4,9 @@ background-image: url("images/beach.jpg");
 background-size: cover;
 background-repeat: no-repeat;
 }
-
+.dot{
+    list-style: none;
+}
 h1
 {
 text-align: center;
