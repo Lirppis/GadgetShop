@@ -1,7 +1,8 @@
 body
 {
-background-image: url("https://www.hameenlinna.fi/wp-content/uploads/2019/03/ilmakuva-verkatehdas-1920x768.jpg");
+background-image: url("images/beach.jpg");
 background-size: cover;
+background-repeat: no-repeat;
 }
 
 h1
