@@ -18,14 +18,14 @@
 
 <div class="col-md-3">
 <ul class="nav navbar-nav navbar-right icon">
-                            <li> <a class="footer- facebook " href="https://www.facebook.com/"><img src="iconmonstr-facebook-1-72.png" height="25" width="25" alt="facebook icon"></a>
+                            <li> <a class="footer- facebook " href="https://www.facebook.com/"><img src="facebook.png" height="25" width="25" alt="facebook icon"></a>
                             </li>
 
                           
-                            <li> <a class="nav-link instagram" href="https://www.instagram.com/"><img src="iconmonstr-instagram-11-72.png" height="25" width="25" alt="instagram icon"></a>
+                            <li> <a class="nav-link instagram" href="https://www.instagram.com/"><img src="instagram.png" height="25" width="25" alt="instagram icon"></a>
                             </li>
 
-                            <li> <a class="nav-link gmail" href="mailto:neuvo.fms.fi@discount.com"><img src="iconmonstr-email-2-72.png" height="25" width="25" alt="Email icon"></a>
+                            <li> <a class="nav-link gmail" href="mailto:neuvo.fms.fi@discount.com"><img src="email.png" height="25" width="25" alt="Email icon"></a>
                             </li>
 
 
