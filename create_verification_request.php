@@ -1,3 +1,4 @@
+<?php include 'header.php' ?>
 <?php include 'db.php' ;
 $business_name= $_POST['business_name'];
 $user_normal_price= $_POST['user_normal_price'];
@@ -9,7 +10,7 @@ values('$business_name', '$user_normal_price', '$user_student_price', '$user_cit
 
 if($conn->query($sql) === TRUE) {
     echo "Student discount has been sent for verification";
-    echo "<a href='update.php' class='top'>Home </a>";
+    echo "<a href='discount.php' class='top'>Home </a>";
     
     /*// Send an email notification of new discount submission
     $message = "$business_name\r\n$user_normal_price\r\n$user_student_price\r\n$user_city";
@@ -27,3 +28,5 @@ else
 $conn->close();
 
 ?>
+
+<?php include 'footer.php' ?>

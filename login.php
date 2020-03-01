@@ -1,5 +1,5 @@
 
-
+<?php include 'header.php'?>
 <?php include('server.php') ?>
 
 
@@ -8,7 +8,7 @@
 <html>
 <head>
   <title>Registration system PHP and MySQL</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="discount.css">
 </head>
 <body>
 
@@ -38,3 +38,5 @@ English  Finnish
   </form>
 </body>
 </html>
+
+<?php include 'footer.php' ?>
