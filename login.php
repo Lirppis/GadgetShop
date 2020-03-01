@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<?php include('index.html') ?>
+
 
   <div class="header">
   	<h2>Login</h2>
