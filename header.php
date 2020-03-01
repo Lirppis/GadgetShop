@@ -12,15 +12,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="discount.css">
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <div class="container container-fluid">
+    <div class="container container-fluid" style="background:transparent;">
 	
 			<!-- header start-->
-		
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<div class="row header">	
     <img src="images/favicon.png" href="images/favicon.png">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -41,4 +40,4 @@
         </li>
         </ul>
     </div>
-    </nav>
+</div>
