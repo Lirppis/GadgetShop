@@ -1,3 +1,5 @@
+
+
 <?php include('server.php') ?>
 
 
@@ -10,7 +12,7 @@
 </head>
 <body>
 
-<div class="language" bg-dark>
+<div class="language bg-dark" >
 English  Finnish
 </div>
 <div class="header">
