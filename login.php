@@ -15,9 +15,8 @@
 <div class="language bg-dark" >
 English  Finnish
 </div>
-<div class="header">
+<div class="header data">
   	<h2>Login</h2>
-  </div>
 	 
   <form method="post" action="login.php">
   	<?php include('errors.php'); ?>
@@ -36,6 +35,7 @@ English  Finnish
   		Not yet a member? <a href="register.php">Sign up</a>
   	</p>
   </form>
+</div>
 </body>
 </html>
 
