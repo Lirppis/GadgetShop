@@ -1,5 +1,4 @@
-<?php include '1header11.php' ?>
-<?php include 'sidebar.php' ?>
+<?php include 'header.php' ?>
 
 <div class='col-md-9 data'>
 <form name= "user_input_form" method="post" action="create_verification_request.php">

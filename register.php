@@ -1,10 +1,12 @@
-<?php include('server.php'); ?>
+<?php include 'header.php' ?>
+
+<?php include('server.php') ?>
 <!DOCTYPE HTML>
 <html>
 <head>
     
     <title>registered user</title>
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="discount.css">
 </head>
 <body>
 <div class="header">
@@ -43,3 +45,5 @@
     
 </body>
 </html>
+
+<?php include 'footer.php'?>
