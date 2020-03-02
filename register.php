@@ -19,21 +19,21 @@
 <?php include('errors.php'); ?>
 <div class="input-group">
 <label>Username</label>
-<input type="text" name="username" value="<?php echo $username; ?>"> </div>
+<input class="text-box" type="text" name="username" value="<?php echo $username; ?>"> </div>
 
 <div class="input-group">
 <label>Email</label>
-<input type="text" name="email" value=" <?php echo $email; ?>">
+<input class="text-box" type="text" name="email" value=" <?php echo $email; ?>">
 </div>
 
 <div class="input-group">
 <label>Password</label>
-<input type="password" name="password_1">
+<input class="text-box" type="password" name="password_1">
 </div>
 
 <div class="input-group">
 <label>Confirm Password</label>
-<input type="password" name="password_2">
+<input class="text-box" type="password" name="password_2">
 </div>
 
 <div class="input-group">

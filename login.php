@@ -22,13 +22,13 @@ English  Finnish
   	<?php include('errors.php'); ?>
   	<div class="input-group">
   		<label>Username</label>
-  		<input type="text" name="username" >
+  		<input class="text-box" type="text" name="username" >
   	</div>
   	<div class="input-group">
   		<label>Password</label>
-  		<input type="password" name="password">
+  		<input class="text-box" type="password" name="password">
   	</div>
-  	<div class="input-group">
+  	<div class="input-group" style="float: right">
   		<button type="submit" class="btn" name="login_user">Login</button>
   	</div>
   	<p>
