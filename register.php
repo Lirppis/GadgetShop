@@ -9,6 +9,7 @@
 <link rel="stylesheet" type="text/css" href="discount.css">
 </head>
 <body>
+<div class="data">
 <div class="header">
 <h2>Register</h2>
 </div>
@@ -42,7 +43,7 @@
   		Already a member? <a href="login.php">Sign in</a>
   	</p>
 </form>
-    
+</div>
 </body>
 </html>
 
