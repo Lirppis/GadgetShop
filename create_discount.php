@@ -1,3 +1,4 @@
+<?php include 'header.php'?>
 <?php include 'db.php' ;
 $name= $_POST['name'];
 $discount_description= $_POST['discount_description'];
@@ -23,3 +24,4 @@ else
 $conn->close();
 
 ?>
+<?php include 'footer.php'?>

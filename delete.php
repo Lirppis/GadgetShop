@@ -1,3 +1,4 @@
+<?php include 'header.php'?>
 <?php
 include 'db.php';
 $a = $_GET['id'];
@@ -47,3 +48,4 @@ if(isset($_POST['submit'])){
 ?>
 </body>
 </html>
+<? include 'footer.php'?>
