@@ -1,15 +1,7 @@
 
 <?php
-<<<<<<< HEAD
-if($_GET['q'] == 'search...'){
-    header('location: search_form.php');
-}
-if($_GET['q'] !== ''){
-    $db = mysql_connect('localhost', 'root', '', 'discountdb');
-=======
 
     $db = mysql_connect('localhost', 'matt', 'Scooby1990!', 'discountdb');
->>>>>>> a5bea46d3ca526b85f91e050f911707ebb690479
 
 
 
