@@ -7,9 +7,9 @@
     Normal Price: <input type="number" name="normal_price"><br>
     Student Price: <input type="number" name="student_price"><br>
     Discount percent: <input type="number" name="discount_percent"><br>
-    Days of week: <input type="text" name="days_of_week"><br>
+    Days of week: <input type="week" name="days_of_week"><br>
     Address: <input type="text" name="address"><br>
-    Phone: <input type="number" name="phone"><br>
+    Phone: <input type="tel" name="phone"><br>
     Email: <input type="email" name="email"><br>
 </select>
 <br>

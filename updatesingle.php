@@ -10,40 +10,62 @@ $row= mysqli_fetch_array($result);
 <title>Update Employee Data</title>
 </head>
 <body>
-<form method="post" action="">
+<form class="data" method="post" action="">
 <div><?php if(isset($message)) { echo $message; } ?>
 </div>
-First Name: <br>
-<input type="text" name="fname"  value="<?php echo $row['fname']; ?>">
+Name: <br>
+<input type="text" name="name"  value="<?php echo $row['name']; ?>">
 <br>
-Last Name :<br>
-<input type="text" name="lname" value="<?php echo $row['lname']; ?>">
+Discount Description :<br>
+<input type="text" name="discount_description" value="<?php echo $row['discount_description']; ?>">
 <br>
-City:<br>
-<input type="text" name="city" value="<?php echo $row['city']; ?>">
+Normal Price:<br>
+<input type="text" name="normal_price" value="<?php echo $row['normal_price']; ?>">
 <br>
-Group ID:<br>
-<select name="groupid"> 
-    <option value="BBCAP19"> BBCAP19 </option>
-    <option value="BBCAP20"> BBCAP20 </option>
-    <option value="Others"> Others </option>
-</select>
+Student Price:<br>
+<input type="text" name="student_price" value="<?php echo $row['student_price']; ?>">
+<br>
+Discount percent:<br>
+<input type="text" name="discount_percent" value="<?php echo $row['discount_percent']; ?>">
+<br>
+Days of week:<br>
+<input type="week" name="days_of_week" value="<?php echo $row['days_of_week']; ?>">
+<br>
+Address:<br>
+<input type="text" name="address" value="<?php echo $row['address']; ?>">
+<br>
+Phone:<br>
+<input type="tel" name="phone" value="<?php echo $row['phone']; ?>">
+<br>
+Email:<br>
+<input type="email" name="email" value="<?php echo $row['city']; ?>">
+<br>
 <br>
 
 <input type="submit" name="submit" value="Submit" >
-</form>
 <?php 
 if(isset($_POST['submit'])){
     if($_POST['submit']){
         
-        $fname = $_POST['fname'];
-        $lname = $_POST['lname'];
-        $city = $_POST['city'];
-        $groupid = $_POST['groupid'];
-        $query = mysqli_query($conn,"UPDATE studentsinfo set fname='$fname' where id='$a'");
-        $query = mysqli_query($conn,"UPDATE studentsinfo set lname='$lname' where id='$a'");
-        $query = mysqli_query($conn,"UPDATE studentsinfo set city='$city' where id='$a'");
-        $query = mysqli_query($conn,"UPDATE studentsinfo set groupid='$groupid' where id='$a'");
+        $name = $_POST['name'];
+        $discount_description = $_POST['discount_description'];
+        $normal_price = $_POST['normal_price'];
+        $student_price = $_POST['student_price'];
+        $discount_percent = $_POST['discount_percent'];
+        $days_of_week = $_POST['days_of_week'];
+        $address = $_POST['address'];
+        $phone = $_POST['phone'];
+        $email = $_POST['email'];
+        $query = mysqli_query($conn,"UPDATE discounts set name='$name' where id='$a'");
+        $query = mysqli_query($conn,"UPDATE discounts set discount_description='$discount_description' where id='$a'");
+        $query = mysqli_query($conn,"UPDATE discounts set normal_price='$normal_price' where id='$a'");
+        $query = mysqli_query($conn,"UPDATE discounts set student_price='$student_price' where id='$a'");
+        $query = mysqli_query($conn,"UPDATE discounts set discount_percent='$discount_percent' where id='$a'");
+        $query = mysqli_query($conn,"UPDATE discounts set days_of_week='$days_of_week' where id='$a'");
+        $query = mysqli_query($conn,"UPDATE discounts set address='$address' where id='$a'");
+        $query = mysqli_query($conn,"UPDATE discounts set phone='$phone' where id='$a'");
+        $query = mysqli_query($conn,"UPDATE discounts set email='$email' where id='$a'");
+
         if($query){
             echo "Record Modified Successfully <br>";
             echo "<a href='update.php'> Check your updated List </a>";
@@ -55,6 +77,8 @@ if(isset($_POST['submit'])){
     $conn->close();
 }
 ?>
+</form>
+
 </body>
 </html>
 <?php include 'footer.php'?>

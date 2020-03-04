@@ -18,7 +18,7 @@ echo "<table border=\"1\"><tr><th>ID</th><th>Name</th><th>Discount Description</
         <td>". $row["email"]. "</td></tr>";
     }
     echo "</table>";
-    echo "<a href="update.php">Back to main page</a>;
+    echo "<a href='update.php'> Back to main </a>";
 }
 // You can type different sql queries based on your needs
 // The output as of now does not look good. Your task is to format it properly with HTML tables. 
