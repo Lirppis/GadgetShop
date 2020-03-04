@@ -13,13 +13,18 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="discount.css">
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  
+
 </head>
 
 <body>
     <div class="container container-fluid" style="background:transparent;">
 	
 			<!-- header start-->
-        <div class="row header">
+
+
+        <div class="row header nav justify-content-end">
+
             <nav class="navbar navbar-expand-lg navbar-light bg-transparent">	
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -39,7 +44,19 @@
                         <li class="nav-item">
                             <a class="nav-link" href="login.php">Login</a>
                         </li>
+                        <li>
+                        <div id="google_translate_element"></div>
+                        </li>
                     </ul>
                 </div>
             </nav>
         </div>
+        <script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+   
+        
