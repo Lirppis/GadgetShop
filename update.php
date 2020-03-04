@@ -17,9 +17,9 @@ $result = $conn->query($sql);?>
 <title> Update Data</title>
 </head>
 <body>
-    <a href="form.php" class="top">Create Data </a>
-    <a href="update.php" class="top">Update/Delete Data </a>
-    <a href="read.php" class="top">Retrieve Data </a>
+    <a href="discount_input_form.php" class="top">Add Discount</a>
+    <a href="update.php" class="top">Update/Delete Discount </a>
+    <a href="read.php" class="top">Retrieve Discount </a>
 <hr>
 <table border="1" cellpadding="5">
 <tr>
@@ -33,11 +33,15 @@ if($result ->num_rows > 0) {
 ?>
 <tr>
 <td><?php echo $row["id"]; ?></td>
-<td><?php echo $row["fname"]; ?></td>
-<td><?php echo $row["lname"]; ?></td>
-<td><?php echo $row["city"]; ?></td>
-<td><?php echo $row["groupid"]; ?></td>
-<td><?php echo $row["timestamp"]; ?></td>
+<td><?php echo $row["name"]; ?></td>
+<td><?php echo $row["discount_description"]; ?></td>
+<td><?php echo $row["normal_price"]; ?></td>
+<td><?php echo $row["student_price"]; ?></td>
+<td><?php echo $row["discount_percent"]; ?></td>
+<td><?php echo $row["days_of_week"]; ?></td>
+<td><?php echo $row["address"]; ?></td>
+<td><?php echo $row["phone"]; ?></td>
+<td><?php echo $row["email"]; ?></td>
 <td><a href="updatesingle.php?id=<?php echo $row['id']; ?>">Update</a></td>
 <td><a href="delete.php?id=<?php echo $row['id']; ?>">Delete</a></td>
 </tr>
