@@ -11,7 +11,7 @@ $result = $conn->query($sql);?>
         a.top {
             margin-right:20px;
             font-size:20px;
-            color:red;
+            color:black;
         }
         </style>
 <title> Update Data</title>
