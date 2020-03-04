@@ -10,7 +10,7 @@ include 'db.php';
 <body>
 <form action="search_php.php" method="post" class="data">
 <input type="text" name="search" placeholder="Search" class="text-box">
-<button type="submit" name="submit-search" class="btn" value="Search"></button>
+<button type="submit" name="submit-search" class="btn" value="Search" style="width: 100%;" ></button>
 </form>
 
 <div class="discount-container" style="background:transparent;">
