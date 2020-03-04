@@ -5,7 +5,7 @@
     $query = $_GET['query']; 
     // gets value sent over from search form
      
-    $min_length = 3;
+    $min_length = 1;
     // you can set minimum length of the query if you want
      
     if(strlen($query) >= $min_length){ // if query length is more or equal minimum length then
