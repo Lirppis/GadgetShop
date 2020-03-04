@@ -9,12 +9,6 @@ $errors = array();
 // connect to the database
 $db = mysqli_connect('localhost', 'root', '', 'discountdb');
 
-
-//login user
-
-
-
-
 // REGISTER USER
 if (isset($_POST['reg_user'])) {
   // receive all input values from the form
@@ -75,7 +69,8 @@ if (isset($_POST['login_user'])) {
   	  $_SESSION['success'] = "You are now logged in";
   	  header('location: update.php');
   	}else {
-  		array_push($errors, "Wrong username/password combination");
+      array_push($errors, "Wrong username/password combination");
+      header('location: login.php');
   	}
   }
 }

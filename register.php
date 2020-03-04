@@ -17,7 +17,7 @@
 <form method="post" action="server.php" >
 
 <!-- Validation Error -->
-<?php include('errors.php'); ?>
+<?php include 'errors.php' ?>
 <div class="input-group">
 <label>Username</label>
 <input class="text-box" type="text" name="username" value="<?php echo $username; ?>"> </div>

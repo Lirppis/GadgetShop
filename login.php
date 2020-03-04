@@ -25,7 +25,7 @@
 
 <div class="header data">
   	<h2>Login</h2>
-	 
+	  <?php include 'errors.php' ?>
   <form onsubmit="return validateform()" method="post" action="server.php">
   	<div class="input-group">
   		<label>Username</label>
