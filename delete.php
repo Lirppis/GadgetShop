@@ -42,6 +42,25 @@ Email:<br>
 <br>
 
 <input type="submit" name="submit" value="Delete" >
+<br>
+<?php 
+
+if(isset($_POST['submit'])){
+    if($_POST['submit']){
+        
+        $name = $_POST['name'];
+        $query = mysqli_query($conn,"DELETE FROM discounts where id='$a'");
+        if($query){
+            echo "Record Deleted with id: $a <br>";
+            echo "<a href='update.php'><br> Check your updated List </a>";
+            // if you want to redirect to update page after updating
+            //header("location: update.php");
+        }
+        else { echo "Record Not Deleted";}
+        }
+    $conn->close();
+}
+?>
 </form >
 <?php 
 
