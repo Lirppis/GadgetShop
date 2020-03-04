@@ -59,7 +59,7 @@ searchBar.placeholder = ''
     <input type="submit" id="searchBtn"  value="search" />
 </form>
     <?php
-    $query = mysql_query("SELECT * FROM discounts")
+    $query = mysql_query("SELECT * FROM discounts");
     $num_rows = mysql_num_rows($query);
 
  while($row = mysql_fetch_array($query)){
