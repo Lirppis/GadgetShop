@@ -1,5 +1,7 @@
-<?php include 'header.php';?>
-<?php include 'db.php';?>
+<?php include 'header.php' ?>
+<?php
+include 'db.php';
+?>
 
 <!DOCTYPE html>
 <html>
@@ -9,8 +11,8 @@
 <body>
 
 
-
-<div class="discount-container ">
+<div class="row info">
+<div class="discount-container col-md-6">
 <?php
 
 $name =mysqli_real_escape_string($conn, $_GET['name']);
@@ -22,7 +24,7 @@ if ($queryResults > 0 ){
 
     while ($row = mysqli_fetch_assoc($result)){
 
-        echo "<div class='article-box col-md-6'> 
+        echo "<div class='article-box'> 
         <h3> ".$row['name']." </h3>
         <p> ".$row['discount_description']." </p>
         <p> ".$row['normal_price']." </p>
@@ -37,39 +39,28 @@ if ($queryResults > 0 ){
 
 
         </div>";
-        
-        <div class="Maps col-md-6">
- 
- <h1>My First Google Map</h1>
- 
- <div id="googleMap" style="width:100%;height:400px;"></div>
- 
- <script>
- function myMap() {
- var mapProp= {
-   center:new google.maps.LatLng(51.508742,-0.120850),
-   zoom:5,
- };
- var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
- }
- </script>
- 
- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
- 
- 
-         </div>
-
     }
     
 }
 
 ?>
-
 </div>
+<div id="googleMap" class="col-md-6" style="width:400px;height:400px;">
+<h2>Location</h2>
+<script>
+function myMap() {
+var mapProp= {
+  center:new google.maps.LatLng(60.976486, 24.479076),
+  zoom:15,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
 
-
- 
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvu5zPrNVOUi0uwz-iv8UIY9aUiOj7Oik&callback=myMap"></script>
+</div>
+</div>
 </body>
 </html>
 
-<?php include 'footer.php';?>
+<?php include 'footer.php'?>
