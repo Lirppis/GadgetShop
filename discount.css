@@ -112,7 +112,7 @@ a
       background-color: grey;
       background-image: none;
       background-size: fill;
-      
+    }
     }
     
   .page-footer{
@@ -120,23 +120,49 @@ a
      bottom: fixed;
   }
 
-  #searchBar{
-      border:1px;
-      font-size:14px;
-      padding:10px;
-      width:200px;
-   border-top-left-radius:10px;
-   border-bottom-left-radius:10px;
-  }
 
-  #searchBtn{
-      border:1px;
-      font-size:14px;
-      padding:10px;
-      background:#EB7F00;
-      cursor :pointer;
-  }
+  /* Search Bar css  */
 
-  #searchBtn:hover{
-      background:darkcyan;
-  }
+  body {
+    background-color: #f3f3f3;
+    font-family: arial;
+}
+
+.discount-container{
+
+    width: 900px;
+    background-color: #fff;
+    padding: 30px;
+}
+ 
+ .discount.box{
+     padding-bottom: 30px;
+     width: 100%;
+
+ }
+
+ input{
+     padding: 0px 20px;
+     width:300px;
+     height:40px;
+     font-size:22px;
+ }
+
+ button{
+    
+    
+     border:1px;
+     font-size:14px;
+     padding:10px;
+     background:#EB7F00;
+     cursor :pointer;
+ }
+
+ #Search{
+    border:1px;
+    font-size:14px;
+    padding:10px;
+    width:200px;
+ border-top-left-radius:10px;
+ border-bottom-left-radius:10px;
+}

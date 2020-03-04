@@ -20,3 +20,5 @@
 
 
 <?php include 'footer.php'?>
+<?php include 'index_searchbar.php'?>
+<?php include 'footer.php'?>

@@ -6,11 +6,15 @@
 <head>
   <title>Registration system PHP and MySQL</title>
   <link rel="stylesheet" type="text/css" href="discount.css">
-  <script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-}
-</script>
+	<script>
+		function validateForm() {
+		var x = document.forms["myForm"]["name"].value;
+		if (x == "") {
+			alert("Name must be filled out");
+			return false;
+		}
+		}
+	</script>
 </head>
 <body>
 
@@ -21,19 +25,18 @@ function googleTranslateElementInit() {
 
 <div class="header data">
   	<h2>Login</h2>
-	 
-  <form method="post" action="login.php">
-  	<?php include('errors.php'); ?>
+	  <?php include 'errors.php' ?>
+  <form onsubmit="return validateform()" method="post" action="server.php">
   	<div class="input-group">
   		<label>Username</label>
-  		<input class="text-box" type="text" name="username" >
+  		<input class="text-box" type="text" name="username"required >
   	</div>
   	<div class="input-group">
   		<label>Password</label>
-  		<input class="text-box" type="password" name="password">
+  		<input class="text-box" type="password" name="password"required>
   	</div>
   	<div class="input-group" style="float: right">
-  		<button type="submit" class="btn" name="login_user">Login</button>
+  		<input type="submit" value="Login"class="btn" name="login_user"></button>
   	</div>
   	<p>
   		
@@ -42,7 +45,6 @@ function googleTranslateElementInit() {
 </div>
 
 </div>
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 <html>
 
