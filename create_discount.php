@@ -15,7 +15,7 @@ values('$name', '$discount_description', '$normal_price', '$student_price', '$di
 
 if($conn->query($sql) === TRUE) {
     echo "Discount has been added successfully";
-    echo "<a href='update.php' class='top'>Home </a>";
+    echo "<a href='update.php' class='top'>Update </a>";
 }
 else
 {
