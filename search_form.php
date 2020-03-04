@@ -1,7 +1,8 @@
 
 <?php
-$con = mysql_connect('localhost','root','');
-$dv = mysql_select_db('discountdb')
+
+$db = mysql_connect('localhost', 'matt', 'Scooby1990!', 'discountdb');
+
 ?>
 <!DOCTYPE HTML>
 <html lang="">
@@ -18,7 +19,6 @@ searchBar.placeholder = 'search...'
     }
 }
 
-
 function inactive(){
     var searchBar = document.getElementbyid('searchBar');
 
@@ -30,7 +30,7 @@ searchBar.placeholder = ''
 
 </script>
 <style>
-          #searchBar{
+          #searchBox{
       border:1px;
       font-size:14px;
       padding:10px;
@@ -50,16 +50,27 @@ searchBar.placeholder = ''
   #searchBtn:hover{
       background:darkcyan;
   }
+  body{
+      font-family:arial;
+  }
+  h3{
+      margin: 20px 0px 0px;
+      padding:0;
+  }
+  p{
+      margin:0;
+      padding:0;
+  }
         </style>
 </head>
     
 <body>
-<form action="search.php" method="post"> 
-    <input type="text" id="searchBar" placeholder="" value="search..." maxlength="25" autocomplete="off" onmousedown="active();" onblur="inactive()" />
+<form action="index.php" method="GET" id="searchForm"> 
+    <input type="text" name="q" id="searchBox" placeholder="" value="search..." maxlength="25" autocomplete="off" onmousedown="active();" onblur="inactive()" />
     <input type="submit" id="searchBtn"  value="search" />
 </form>
     <?php
-    $query = mysql_query("SELECT * FROM discounts");
+    $query = mysql_query("SELECT * FROM discounts WHERE discount_percent LIKE '%$q%' OR discount_description LIKE '%$q%' ");
     $num_rows = mysql_num_rows($query);
 
  while($row = mysql_fetch_array($query)){
@@ -73,7 +84,7 @@ searchBar.placeholder = ''
    $phone = $row['phone'];
    $email = $row['email'];
 
-   echo $id . ' ' . $discount_description . ' ' .  $normal_price . ' ' .  $student_price . ' ' . $discount_percent . ' ' . $days_of_week . ' ' .  $address . ' ' .  $phone . ' ' . $email . '<br/>';
+   echo   ' <h3>' . $discount_description . ' </h3>' .  $normal_price . ' ' .  $student_price . ' ' . $discount_percent . ' ' . $days_of_week . ' ' .  $address . ' ' .  $phone . ' ' . $email . '<br/>';
  }
     ?>
 </body>
