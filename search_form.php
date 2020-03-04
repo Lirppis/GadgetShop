@@ -112,8 +112,3 @@ echo '';
     ?>
 </body>
 </html>
-<?php
- else {
-    header('location: search_form.php');
-}
-?>
