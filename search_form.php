@@ -1,9 +1,6 @@
 
 <?php
-if($_GET['q'] == 'search...'){
-    header('location: search_form.php');
-}
-if($_GET['q'] !== ''){
+
     $db = mysql_connect('localhost', 'matt', 'Scooby1990!', 'discountdb');
 
 
@@ -116,7 +113,7 @@ echo '';
 </body>
 </html>
 <?php
-} else {
+ else {
     header('location: search_form.php');
 }
 ?>
