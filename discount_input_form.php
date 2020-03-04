@@ -34,6 +34,7 @@ function get_percentage($normal_price, $student_price)
 </body>
 </html>
 
+
 <div class='col-md-9 data'>
 <form name= "discount_input_form" onsubmit="return validateform()" method="post" action="create_discount.php">
     Business Name: <input type="text" name="name"required><br>
