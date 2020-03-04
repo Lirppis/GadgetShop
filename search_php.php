@@ -26,13 +26,13 @@ echo "There are ".$queryResult." results!";
 
 if($queryResult > 0)
 {
-while($row = mysqli_fetch_assoc()){
+while($row = mysqli_fetch_assoc($result)){
     echo "<a href='article.php?name=".$row['name']."&address=".$row['address']."'><div class='article-box'> 
     <h3> ".$row['name']." </h3>
     <p> ".$row['discount_description']." </p>
     <p> ".$row['normal_price']." </p>
     <p> ".$row['student_price']." </p>
-    <p> ".$row['discount_percent ']." </p>
+    <p> ".$row['discount_percent']." </p>
     <p> ".$row['days_of_week']." </p>
     <p> ".$row['address']." </p>
     <p> ".$row['phone']." </p>
