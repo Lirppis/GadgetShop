@@ -32,7 +32,7 @@ while($row = mysqli_fetch_assoc()){
     <p> ".$row['discount_description']." </p>
     <p> ".$row['normal_price']." </p>
     <p> ".$row['student_price']." </p>
-    <p> ".$row['discount_percent ']." </p>
+    <p> ".$row['discount_percent']." </p>
     <p> ".$row['days_of_week']." </p>
     <p> ".$row['address']." </p>
     <p> ".$row['phone']." </p>
