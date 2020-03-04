@@ -22,7 +22,7 @@ function googleTranslateElementInit() {
 <div class="header data">
   	<h2>Login</h2>
 	 
-  <form method="post" action="login.php">
+  <form method="post" action="server.php">
   	<?php include('errors.php'); ?>
   	<div class="input-group">
   		<label>Username</label>
