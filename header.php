@@ -22,14 +22,14 @@
 	
 			<!-- header start-->
 
-
+            <a class="navbar-brand" href="http://localhost/GadgetShop/discount.php"><img src="images/favicon.png" href=""></a>
         <div class="row header nav justify-content-end">
 
             <nav class="navbar navbar-expand-lg navbar-light bg-transparent">	
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="http://localhost/GadgetShop/discount.php"><img src="images/favicon.png" href=""></a>
+                
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
@@ -58,5 +58,7 @@ function googleTranslateElementInit() {
 </script>
 
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
    
         

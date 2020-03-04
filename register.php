@@ -1,6 +1,7 @@
 <?php include 'header.php' ?>
 
 <?php include('server.php') ?>
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -13,10 +14,10 @@
 <div class="header">
 <h2>Register</h2>
 </div>
-<form method="post" action="register.php" >
+<form method="post" action="server.php" >
 
 <!-- Validation Error -->
-<?php include('errors.php'); ?>
+<?php include 'errors.php' ?>
 <div class="input-group">
 <label>Username</label>
 <input class="text-box" type="text" name="username" value="<?php echo $username; ?>"> </div>
@@ -37,7 +38,7 @@
 </div>
 
 <div class="input-group">
-<button type="submit" name="reg_user" class="btn"><a href="login.php">Register</a></button>
+<input type="submit" name="reg_user" class="btn"><a href="login.php">Register</a></button>
 </div>
 <p>
   		Already a member? <a href="login.php">Sign in</a>
