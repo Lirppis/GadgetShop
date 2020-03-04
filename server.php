@@ -7,7 +7,7 @@ $email    = "";
 $errors = array(); 
 
 // connect to the database
-$db = mysqli_connect('localhost', 'matt', 'Scooby1990!', 'discountdb');
+$db = mysqli_connect('localhost', 'root', '', 'discountdb');
 
 
 //login user
