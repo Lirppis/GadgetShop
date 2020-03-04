@@ -1,10 +1,5 @@
-<<<<<<< HEAD
 <!-- Footer -->
 <footer class="page-footer font-small blue pt-4 fixed-bottom">
-=======
-<<!-- Footer -->
-<footer class="page-footer font-small blue pt-4 fixed-bottom ">
->>>>>>> 0b83bfd0e5d7d762105394c36ca4c237d5f3cf08
 
 <!-- Footer Links -->
 <div class="container-fluid text-center text-md-left ">
