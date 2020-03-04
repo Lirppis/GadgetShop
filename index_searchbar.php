@@ -9,7 +9,7 @@ include 'db.php';
 <link rel="stylesheet" type="text/css" href="discount.css">
 
 
-<style>
+
 body {
     background-color: #f3f3f3;
     font-family: arial;
@@ -42,7 +42,7 @@ body {
      font-size:22px;
  }
 
- </style>
+
 
 </head>
 <body>
