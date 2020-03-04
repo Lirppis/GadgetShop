@@ -19,11 +19,12 @@ if (isset($_POST['reg_user'])) {
 
   // form validation: ensure that the form is correctly filled ...
   // by adding (array_push()) corresponding error unto $errors array
-  if (empty($username)) { array_push($errors, "Username is required"); }
-  if (empty($email)) { array_push($errors, "Email is required"); }
-  if (empty($password_1)) { array_push($errors, "Password is required"); }
+  if (empty($username)) { array_push($errors, "Username is required"); header('location: register.php');}
+  if (empty($email)) { array_push($errors, "Email is required"); header('location: register.php');}
+  if (empty($password_1)) { array_push($errors, "Password is required"); header('location: register.php');}
   if ($password_1 != $password_2) {
-	array_push($errors, "The two passwords do not match");
+  array_push($errors, "The two passwords do not match");
+  header('location: register.php');
   }
 
   // first check the database to make sure 
@@ -35,10 +36,12 @@ if (isset($_POST['reg_user'])) {
   if ($user) { // if user exists
     if ($user['username'] === $username) {
       array_push($errors, "Username already exists");
+      header('location: register.php');
     }
 
     if ($user['email'] === $email) {
       array_push($errors, "email already exists");
+      header('location: register.php');
     }
   }
 
