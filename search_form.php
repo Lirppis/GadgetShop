@@ -60,7 +60,7 @@ searchBar.placeholder = ''
 </form>
     <?php
     $query = mysql_query("SELECT * FROM discounts")
-    
+    $num_rows = mysql_num_rows($query);
 
  while($row = mysql_fetch_array($query)){
    $id = $row['id'];
