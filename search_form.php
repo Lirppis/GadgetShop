@@ -1,10 +1,15 @@
 
 <?php
+<<<<<<< HEAD
 if($_GET['q'] == 'search...'){
     header('location: search_form.php');
 }
 if($_GET['q'] !== ''){
     $db = mysql_connect('localhost', 'root', '', 'discountdb');
+=======
+
+    $db = mysql_connect('localhost', 'matt', 'Scooby1990!', 'discountdb');
+>>>>>>> a5bea46d3ca526b85f91e050f911707ebb690479
 
 
 
@@ -107,6 +112,7 @@ echo '';
    $address = $row['address'];
    $phone = $row['phone'];
    $email = $row['email'];
+   
 
    echo   ' <h3><a href="' . $id . '">' . $discount_description . ' </h3>' .  $normal_price . ' ' .  $student_price . ' ' . $discount_percent . ' ' . $days_of_week . ' ' .  $address . ' ' .  $phone . ' ' . $email . '<br/>';
  }
@@ -115,7 +121,7 @@ echo '';
 </body>
 </html>
 <?php
-} else {
+ else {
     header('location: search_form.php');
 }
 ?>
