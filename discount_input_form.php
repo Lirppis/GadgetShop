@@ -19,17 +19,6 @@ function validateForm() {
   }
 }
 </script>
-<!-- Percentage calculator -->
-<script>
-function get_percentage($normal_price, $student_price)
-{
-  if ( $normal_price > 0 ) {
-   return round($student_price*100/$normal_price);
-  } else {
-    return 0;
-  }
-}
-</script>
 
 </body>
 </html>
@@ -41,7 +30,7 @@ function get_percentage($normal_price, $student_price)
     Discount Description: <input type="text" name="discount_description"required><br>
     Normal Price: <input type="number" name="normal_price"required><br>
     Student Price: <input type="number" name="student_price"required><br>
-    Discount percent: <output type="number" name="discount_percent" onsubmit="return get_percentage($normal_price, $student_price)"><br>
+    Discount percent: <input type="number" name="discount_percent"required><br>
     Days of week: <input type="text" name="days_of_week"required><br>
     Address: <input type="text" name="address"required><br>
     Phone: <input type="number" name="phone"required><br>
