@@ -107,6 +107,7 @@ echo '';
    $address = $row['address'];
    $phone = $row['phone'];
    $email = $row['email'];
+   
 
    echo   ' <h3><a href="' . $id . '">' . $discount_description . ' </h3>' .  $normal_price . ' ' .  $student_price . ' ' . $discount_percent . ' ' . $days_of_week . ' ' .  $address . ' ' .  $phone . ' ' . $email . '<br/>';
  }
