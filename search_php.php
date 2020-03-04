@@ -20,7 +20,7 @@ if (isset($_POST['submit-search'])){
     $sql = "SELECT * FROM discounts WHERE name LIKE '%$search%'   OR days_of_week LIKE '%$search%'";
 
     $result = mysqli_query($conn, $sql);
-    $queryResult = mysql_num_rows($result);
+    $queryResult = mysqli_num_rows($result);
 
 echo "There are ".$queryResult." results!";
 
