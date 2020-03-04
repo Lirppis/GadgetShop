@@ -71,7 +71,7 @@ h2{
 
 }
 
-.col-md-3-mb-md-0-mb-3
+.footer-copyright
 {
     color: white;
 }
@@ -96,6 +96,17 @@ a
     color: white;
 }
 
+.footer-copyright
+{
+    font-size: 20px;
+    margin: 10px;
+}
+ 
+.footer-fix
+{
+    color: transparent;
+}
+
 @media only screen and (min-width : 320px) and (max-width : 480px) {
     body {
       background-color: grey;
@@ -103,14 +114,18 @@ a
       background-size: fill;
     }
     }
-
-    
-
-  
+<<<<<<< HEAD
 
   .page-footer{
      position: static;
      bottom: static;
+  }
+
+=======
+    
+  .page-footer{
+     position: static;
+     bottom: fixed;
   }
 
 
@@ -159,3 +174,4 @@ a
  border-top-left-radius:10px;
  border-bottom-left-radius:10px;
 }
+>>>>>>> 741a647d781876fcf1d6d6316514e05690fb0668

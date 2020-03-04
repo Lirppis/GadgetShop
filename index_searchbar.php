@@ -8,16 +8,16 @@ include 'db.php';
 <title></title><link rel="stylesheet" type="text/css" href="discount.css">
 </head>
 <body>
-
-<form action="search_php.php" method="post">
-<input type="text" name="search" placeholder="Search">
-<button type="submit" name="submit-search"></button>
+<form action="search_php.php" method="post" class="data">
+<input type="text" name="search" placeholder="Search" class="text-box">
+<button type="submit" name="submit-search" class="btn" value="Search"></button>
 </form>
 
-<div class="discount-container">
+<div class="discount-container" style="background:transparent;">
 <?php
 $sql = "select * FROM discounts";
 $result = mysqli_query($conn, $sql);
+error_reporting(E_ERROR | E_PARSE);
 $queryResults = mysqli_num_rows();
 
 if ($queryResults > 0 ){
