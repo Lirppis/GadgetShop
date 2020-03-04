@@ -1,6 +1,6 @@
 
 <?php
-$con = mysql_connect('localhost','root','');
+$con = mysql_connect('localhost','matt','Scooby1990!');
 $dv = mysql_select_db('discountdb')
 ?>
 <!DOCTYPE HTML>
