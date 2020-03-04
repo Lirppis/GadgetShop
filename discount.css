@@ -84,23 +84,3 @@ h2{
      color: aliceblue;
   }
 
-  #searchBar{
-      border:1px;
-      font-size:14px;
-      padding:10px;
-      width:200px;
-   border-top-left-radius:10px;
-   border-bottom-left-radius:10px;
-  }
-
-  #searchBtn{
-      border:1px;
-      font-size:14px;
-      padding:10px;
-      background:#EB7F00;
-      cursor :pointer;
-  }
-
-  #searchBtn:hover{
-      background:darkcyan;
-  }
