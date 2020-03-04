@@ -7,34 +7,49 @@ $row= mysqli_fetch_array($result);
 ?>
 <html>
 <head>
-<title>Update Employee Data</title>
+<title>Update Discount Data</title>
 </head>
 <body>
-<form method="post" action="">
+<form class="data" method="post" action="">
 <div><?php if(isset($message)) { echo $message; } ?>
 </div>
-First Name: <br>
-<input type="text" name="fname"  value="<?php echo $row['fname']; ?>">
+Business Name: <br>
+<input type="text" name="name"  value="<?php echo $row['name']; ?>">
 <br>
-Last Name :<br>
-<input type="text" name="lname" value="<?php echo $row['lname']; ?>">
+Discount Description:<br>
+<input type="text" name="discount_description" value="<?php echo $row['discount_description']; ?>">
 <br>
-City:<br>
-<input type="text" name="city" value="<?php echo $row['city']; ?>">
+Normal Price:<br>
+<input type="text" name="normal_price" value="<?php echo $row['normal_price']; ?>">
+<br>
+Student Price:<br>
+<input type="text" name="student_price" value="<?php echo $row['student_price']; ?>">
+<br>
+Discount percent:<br>
+<input type="text" name="discount_percent" value="<?php echo $row['discount_percent']; ?>">
+<br>
+Days of Week:<br>
+<input type="text" name="days_of_week" value="<?php echo $row['days_of_week']; ?>">
+<br>
+Address:<br>
+<input type="text" name="address" value="<?php echo $row['address']; ?>">
+<br>
+Phone:<br>
+<input type="text" name="phone" value="<?php echo $row['phone']; ?>">
 <br>
 Email:<br>
-<input type="text" name="groupid" value="<?php echo $row['groupid']; ?>">
+<input type="text" name="email" value="<?php echo $row['email']; ?>">
 <br>
 
 <input type="submit" name="submit" value="Delete" >
-</form>
+</form >
 <?php 
 
 if(isset($_POST['submit'])){
     if($_POST['submit']){
         
-        $fname = $_POST['fname'];
-        $query = mysqli_query($conn,"DELETE FROM studentsinfo where id='$a'");
+        $name = $_POST['name'];
+        $query = mysqli_query($conn,"DELETE FROM discounts where id='$a'");
         if($query){
             echo "Record Deleted with id: $a <br>";
             echo "<a href='update.php'> Check your updated List </a>";
