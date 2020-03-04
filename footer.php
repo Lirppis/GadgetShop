@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 <!-- Footer -->
 <footer class="page-footer font-small blue pt-4 fixed-bottom">
+=======
+<<!-- Footer -->
+<footer class="page-footer font-small blue pt-4 fixed-bottom ">
+>>>>>>> 0b83bfd0e5d7d762105394c36ca4c237d5f3cf08
 
 <!-- Footer Links -->
-<div class="container-fluid text-center text-md-left">
+<div class="container-fluid text-center text-md-left ">
 
   <!-- Grid row -->
   <div class="row">
@@ -52,7 +57,7 @@
 
 <!-- Copyright -->
 <div class="footer-copyright text-center py-3">© 2020 Copyright:
-  <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+  <a href="https://www.hamk.fi/"> MDBootstrap.com</a>
 </div>
 <!-- Copyright -->
 
