@@ -99,6 +99,7 @@ echo '';
 <?php
  while($row = mysql_fetch_array($query)){
    $id = $row['id'];
+   
    $discount_description = $row['discount_description'];
    $normal_price = $row['normal_price'];
    $student_price = $row['student_price'];
