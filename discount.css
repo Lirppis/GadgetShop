@@ -109,8 +109,8 @@ a
   
 
   .page-footer{
-     position: static;
-     bottom: static;
+     position: relative;
+     top: 250px;
   }
 
   #searchBar{
