@@ -114,64 +114,9 @@ a
       background-size: fill;
     }
     }
-<<<<<<< HEAD
 
   .page-footer{
      position: static;
      bottom: static;
   }
 
-=======
-    
-  .page-footer{
-     position: static;
-     bottom: fixed;
-  }
-
-
-  /* Search Bar css  */
-
-  body {
-    background-color: #f3f3f3;
-    font-family: arial;
-}
-
-.discount-container{
-
-    width: 900px;
-    background-color: #fff;
-    padding: 30px;
-}
- 
- .discount.box{
-     padding-bottom: 30px;
-     width: 100%;
-
- }
-
- input{
-     padding: 0px 20px;
-     width:300px;
-     height:40px;
-     font-size:22px;
- }
-
- button{
-    
-    
-     border:1px;
-     font-size:14px;
-     padding:10px;
-     background:#EB7F00;
-     cursor :pointer;
- }
-
- #Search{
-    border:1px;
-    font-size:14px;
-    padding:10px;
-    width:200px;
- border-top-left-radius:10px;
- border-bottom-left-radius:10px;
-}
->>>>>>> 741a647d781876fcf1d6d6316514e05690fb0668
