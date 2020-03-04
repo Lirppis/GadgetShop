@@ -13,8 +13,6 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="discount.css">
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-  
-
 </head>
 
 <body>
@@ -58,5 +56,3 @@ function googleTranslateElementInit() {
 </script>
 
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-   
-        
