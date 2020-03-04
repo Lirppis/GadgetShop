@@ -37,7 +37,7 @@ function validateForm() {
     Email: <input type="email" name="email"required><br>
 <br>
 <input type="submit" value="Save Discount">
-<
+
 </form>
 </div>
 
