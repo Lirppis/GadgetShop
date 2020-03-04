@@ -9,8 +9,9 @@ include 'db.php';
 </head>
 <body>
 <form action="search_php.php" method="post" class="data">
-<input type="text" name="search" placeholder="Search" class="text-box">
-<button type="submit" name="submit-search" class="btn" value="Search" style="width: 100%;" ></button>
+    <h2>Search</h2>
+<input type="text" name="search" class="text-box">
+<input type="submit" value="Submit" class="btn" name="submit-search"></button>
 </form>
 
 <div class="discount-container" style="background:transparent;">

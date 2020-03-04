@@ -28,9 +28,9 @@ function validateForm() {
 <form name= "discount_input_form" onsubmit="return validateform()" method="post" action="create_discount.php">
     Business Name: <input type="text" name="name"required><br>
     Discount Description: <input type="text" name="discount_description"required><br>
-    Normal Price: <input type="number" name="normal_price"required><br>
-    Student Price: <input type="number" name="student_price"required><br>
-    Discount percent: <input type="number" name="discount_percent"required><br>
+    Normal Price: <input type="text" name="normal_price"required><br>
+    Student Price: <input type="text" name="student_price"required><br>
+    Discount percent: <input type="text" name="discount_percent"required><br>
     Days of week: <input type="text" name="days_of_week"required><br>
     Address: <input type="text" name="address"required><br>
     Phone: <input type="number" name="phone"required><br>

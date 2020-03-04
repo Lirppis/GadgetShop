@@ -29,7 +29,7 @@ Discount percent:<br>
 <input type="text" name="discount_percent" value="<?php echo $row['discount_percent']; ?>">
 <br>
 Days of week:<br>
-<input type="week" name="days_of_week" value="<?php echo $row['days_of_week']; ?>">
+<input type="text" name="days_of_week" value="<?php echo $row['days_of_week']; ?>">
 <br>
 Address:<br>
 <input type="text" name="address" value="<?php echo $row['address']; ?>">
