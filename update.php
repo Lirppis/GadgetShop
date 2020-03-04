@@ -23,8 +23,9 @@ $result = $conn->query($sql);?>
 <hr>
 <table border="1" cellpadding="5">
 <tr>
-<th>ID</th><th>First Name</th><th>Last Name</th>
-<th>City</th><th>Group ID</th><th>Timestamp</th> <th>Edit</th>
+<th>ID</th><th>Name</th><th>Discount Description</th>
+<th>Normal Price</th><th>Student Price</th><th>Discount Percent</th><th>Days Of Week</th><th>Address</th>
+<th>Phone</th><th>Email</th> <th>Edit</th>
 <th>Delete</th>
 </tr>
 <?php 
