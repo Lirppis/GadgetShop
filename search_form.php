@@ -1,7 +1,9 @@
 
 <?php
+if($_GET['q'] !== ''){
+    $db = mysql_connect('localhost', 'matt', 'Scooby1990!', 'discountdb');
 
-$db = mysql_connect('localhost', 'matt', 'Scooby1990!', 'discountdb');
+
 
 ?>
 <!DOCTYPE HTML>
@@ -65,7 +67,7 @@ searchBar.placeholder = ''
 </head>
     
 <body>
-<form action="index.php" method="GET" id="searchForm"> 
+<form action="search_form.php" method="GET" id="searchForm"> 
     <input type="text" name="q" id="searchBox" placeholder="" value="search..." maxlength="25" autocomplete="off" onmousedown="active();" onblur="inactive()" />
     <input type="submit" id="searchBtn"  value="search" />
 </form>
@@ -89,3 +91,6 @@ searchBar.placeholder = ''
     ?>
 </body>
 </html>
+<?php
+}
+?>
