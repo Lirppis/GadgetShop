@@ -1,5 +1,5 @@
 <<!-- Footer -->
-<footer class="page-footer font-small blue pt-4 fixed-bottom ">
+<footer class="page-footer font-small blue pt-4 fixed-bottom">
 
 <!-- Footer Links -->
 <div class="container-fluid text-center text-md-left ">
@@ -20,24 +20,7 @@
     <hr class="clearfix w-100 d-md-none pb-3">
 
     <!-- Grid column -->
-    <div class="col-md-3 mb-md-0 mb-3">
-
-      <!-- Links -->
-      <h5 class="text-uppercase">Useful links</h5>
-
-      <ul class="list-unstyled">
-        <li>
-          <a href="help.php">Help</a>
-        </li>
-        <li>
-          <a href="terms.php">Terms of service</a>
-        </li>
-        <li>
-          <a href="Privacy.php">Privacy policy</a>
-        </li>
-      </ul>
-
-    </div>
+    
     <!-- Grid column -->
 
     <!-- Grid column -->
@@ -51,8 +34,14 @@
 <!-- Footer Links -->
 
 <!-- Copyright -->
-<div class="footer-copyright text-center py-3">© 2020 Copyright:
-  <a href="https://www.hamk.fi/"> MDBootstrap.com</a>
+<div class="footer-copyright text-center py-3"> <a>
+  <a href="https://www.hamk.fi//"> HAMK</a> © 2020 <a href="help.php"> Help </a>
+        
+        
+        <a href="terms.php"> Terms of service </a>
+      
+      
+        <a href="Privacy.php"> Privacy policy </a>
 </div>
 <!-- Copyright -->
 
