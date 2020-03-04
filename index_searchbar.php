@@ -5,45 +5,7 @@ include 'db.php';
 <!DOCTYPE html>
 <html>
 <head>
-<title></title>
-<link rel="stylesheet" type="text/css" href="discount.css">
-
-
-
-body {
-    background-color: #f3f3f3;
-    font-family: arial;
-}
-
-.discount-container{
-
-    width: 900px;
-    background-color: #fff;
-    padding: 30px;
-}
- 
- .discount.box{
-     padding-bottom: 30px;
-     width: 100%;
-
- }
-
- input{
-     padding: 0px 20px;
-     width:300px;
-     height:40px;
-     font-size:22px;
- }
-
- button{
-    
-     width:100px;
-     height:44px;
-     font-size:22px;
- }
-
-
-
+<title></title><link rel="stylesheet" type="text/css" href="discount.css">
 </head>
 <body>
 
