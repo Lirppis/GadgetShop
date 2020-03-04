@@ -43,7 +43,7 @@
                             <a class="nav-link" href="login.php">Login</a>
                         </li>
                         <li>
-                        <div id="google_translate_element"></div>
+                        <div class="translate" id="google_translate_element"></div>
                         </li>
                     </ul>
                 </div>

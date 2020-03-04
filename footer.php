@@ -1,4 +1,4 @@
-<<!-- Footer -->
+<!-- Footer -->
 <footer class="page-footer font-small blue pt-4 fixed-bottom">
 
 <!-- Footer Links -->
