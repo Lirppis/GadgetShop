@@ -1,4 +1,15 @@
 <?php include 'header.php' ?>
+
+<!DOCTYPE HTML>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <title>Nome do Documento</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+    
+<body>
+
 <script>
 function validateForm() {
   var x = document.forms["myForm"]["fname"].value;
@@ -8,6 +19,13 @@ function validateForm() {
   }
 }
 </script>
+    
+</body>
+</html>
+
+
+
+
 <div class='col-md-9 data'>
     <h2>Signup to our <br> newsletter</h2>
 <form name= "newsletter_signup_form" onsubmit="return validateform()" method="post" action="newsletter_signup.php">
