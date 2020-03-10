@@ -1,6 +1,6 @@
 <?php include 'header.php' ?>
 
-<div class="col-md-9 data">
+<div class="col-md-9 update">
 <?php
 require 'db.php'; 
 $sql = "select * from discounts";
@@ -21,7 +21,7 @@ $result = $conn->query($sql);?>
     <a href="update.php" class="top">Update/Delete Discount </a>
     <a href="read.php" class="top">Retrieve Discount </a>
 <hr>
-<table border="1" cellpadding="5">
+<table class="table" border="2" cellpadding="5">
 <tr>
 <th>ID</th><th>Name</th><th>Discount Description</th>
 <th>Normal Price</th><th>Student Price</th><th>Discount Percent</th><th>Days Of Week</th><th>Address</th>
@@ -43,8 +43,8 @@ if($result ->num_rows > 0) {
 <td><?php echo $row["address"]; ?></td>
 <td><?php echo $row["phone"]; ?></td>
 <td><?php echo $row["email"]; ?></td>
-<td><a href="updatesingle.php?id=<?php echo $row['id']; ?>">Update</a></td>
-<td><a href="delete.php?id=<?php echo $row['id']; ?>">Delete</a></td>
+<td><a class="update-link" href="updatesingle.php?id=<?php echo $row['id']; ?>">Update</a></td>
+<td><a class="delete-link" href="delete.php?id=<?php echo $row['id']; ?>">Delete</a></td>
 </tr>
 
 <?php 

@@ -26,19 +26,17 @@ if ($queryResults > 0 ){
 
         echo "<div class='article-box'> 
         <h3> ".$row['name']." </h3>
-        <p> ".$row['discount_description']." </p>
-        <p> ".$row['normal_price']." </p>
-        <p> ".$row['student_price']." </p>
-        <p> ".$row['discount_percent']." </p>
-        <p> ".$row['days_of_week']." </p>
-        <p> ".$row['address']." </p>
-        <p> ".$row['phone']." </p>
-
-        <p> ".$row['email']." </p>
-
-
-
+        <p> Description : ".$row['discount_description']." </p>
+        <p> Normal Price : ".$row['normal_price']." </p>
+        <p> Student Price : ".$row['student_price']." </p>
+        <p> Discount Percent : ".$row['discount_percent']." </p>
+        <p> Days : ".$row['days_of_week']." </p>
+        <p> Address : ".$row['address']." </p>
+        <p> Tel : ".$row['phone']." </p>
+        <p> Email : ".$row['email']." </p>
         </div>";
+        $lat = $row['lat'];
+        $lng = $row['lng'];
     }
     
 }
@@ -48,13 +46,24 @@ if ($queryResults > 0 ){
 <div id="googleMap" class="col-md-6" style="width:400px;height:400px;">
 <h2>Location</h2>
 <script>
+var lat_ = "<?php echo"$lat"?>";
+var lng_ = "<?php echo"$lng"?>"; 
+
 function myMap() {
+
 var mapProp= {
-  center:new google.maps.LatLng(60.976486, 24.479076),
+  center:new google.maps.LatLng(lat_, lng_),
   zoom:15,
 };
+var myLatLng=new google.maps.LatLng(lat_, lng_);
+
 var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var marker = new google.maps.Marker({ 
+          position: myLatLng, 
+          map: map 
+        }); 
 }
+
 </script>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvu5zPrNVOUi0uwz-iv8UIY9aUiOj7Oik&callback=myMap"></script>

@@ -35,6 +35,8 @@ function validateForm() {
     Address: <input type="text" name="address"required><br>
     Phone: <input type="number" name="phone"required><br>
     Email: <input type="email" name="email"required><br>
+    Latitude: <input type="number" name="lat"required><br>
+    Longitude: <input type="number" name="lng"required><br>
 <br>
 <input type="submit" value="Save Discount">
 

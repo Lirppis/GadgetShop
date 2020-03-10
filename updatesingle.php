@@ -2,12 +2,12 @@
 <?php
 include 'db.php';
 $a = $_GET['id'];
-$result = mysqli_query($conn,"SELECT * FROM studentsinfo WHERE id= '$a'");
+$result = mysqli_query($conn,"SELECT * FROM discounts WHERE id= '$a'");
 $row= mysqli_fetch_array($result);
 ?>
 <html>
 <head>
-<title>Update Employee Data</title>
+<title>Update Discount Info</title>
 </head>
 <body>
 <form class="data" method="post" action="">
@@ -38,7 +38,13 @@ Phone:<br>
 <input type="tel" name="phone" value="<?php echo $row['phone']; ?>">
 <br>
 Email:<br>
-<input type="email" name="email" value="<?php echo $row['city']; ?>">
+<input type="email" name="email" value="<?php echo $row['email']; ?>">
+<br>
+Latitude:<br>
+<input type="text" name="lat" value="<?php echo $row['lat']; ?>">
+<br>
+Longitude:<br>
+<input type="text" name="lng" value="<?php echo $row['lng']; ?>">
 <br>
 <br>
 
@@ -56,6 +62,8 @@ if(isset($_POST['submit'])){
         $address = $_POST['address'];
         $phone = $_POST['phone'];
         $email = $_POST['email'];
+        $lat = $_POST['lat'];
+        $lng = $_POST['lng'];
         $query = mysqli_query($conn,"UPDATE discounts set name='$name' where id='$a'");
         $query = mysqli_query($conn,"UPDATE discounts set discount_description='$discount_description' where id='$a'");
         $query = mysqli_query($conn,"UPDATE discounts set normal_price='$normal_price' where id='$a'");
@@ -65,6 +73,8 @@ if(isset($_POST['submit'])){
         $query = mysqli_query($conn,"UPDATE discounts set address='$address' where id='$a'");
         $query = mysqli_query($conn,"UPDATE discounts set phone='$phone' where id='$a'");
         $query = mysqli_query($conn,"UPDATE discounts set email='$email' where id='$a'");
+        $query = mysqli_query($conn,"UPDATE discounts set lat='$lat' where id='$a'");
+        $query = mysqli_query($conn,"UPDATE discounts set lng='$lng' where id='$a'");
 
         if($query){
             echo "Record Modified Successfully <br>";

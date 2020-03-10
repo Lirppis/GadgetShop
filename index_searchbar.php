@@ -8,7 +8,7 @@ include 'db.php';
 <title></title><link rel="stylesheet" type="text/css" href="discount.css">
 </head>
 <body>
-<form action="search_php.php" method="post" class="data">
+<form action="search_php.php" method="post" class="data data-search">
     <h2>Search</h2>
 <input type="text" name="search" class="text-box">
 <input type="submit" value="Submit" class="btn" name="submit-search"></button>
